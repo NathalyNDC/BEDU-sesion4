@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+    background: #f8f9fa;
+}
+nav {
+    height: 85px;
+}
+h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #025157;
+    background: #f8f9fa;
+    margin: 0;
+}
+.container { 
+    display: flex;
+    /*flex-wrap: wrap-reverse;
+      flex-direction: row;
+    */
+    flex-flow: row wrap;
+    width: 100%;
+    height: 500px;
+    background: #f8f9fa;
+    justify-content: space-around;
+    align-items: center;
+}
+  img {
+      width: 60px;
+      height: 60px;
+      display:block;
+margin:auto;
+  }
+.container div {
+    border-color: grey;
+    border-width: 3px;
+}
+.item {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+    width: 260px;
+    height: 60%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;;
+    margin: 5px;
+    border: 0.1px solid #dadada;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.item p {
+    font-size: 14px;
+    color: gray;
+}
+
+.item h2 {
+    font-size: 19px;
+}
+.item * {
+    text-align: center;
+    
+}
+
+/************************************************/
+
+.features {
+    width: 100%;
+    display: grid;
+    /*grid-template-columns: 50px 50px;*/
+   
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+article {
+    background-color: greenyellow;
+    margin: 10px;
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+#es1 {
+    background-image: "https://getmatcha.com/wp-content/themes/getmatcha/img/gfx/blocks/masters.jpg";
+}
+
+#es3 {
+   background-color: red;
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/gfx/blocks/texture.jpg),-webkit-gradient(linear,left top,left bottom,color-stop(20%,#fff),color-stop(40%,#fade82),to(#fade82));
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/gfx/blocks/texture.jpg),-webkit-linear-gradient(#fff 20%,#fade82 40%,#fade82 100%);
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/gfx/blocks/texture.jpg),linear-gradient(#fff 20%,#fade82 40%,#fade82 100%);
+    background-repeat: repeat-x;
+    background-position: center 2%;
+    background-size: 115% auto;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+#es4 {
+    background-color: #035157;
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/gfx/blocks/toolkit.jpg);
+    background-position: 130% 44%;
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/*****************************************************************/
+
+.item1 {
+    grid-area: header;
+}
+.item2{ 
+    grid-area: menu;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: right;
+}
+.item5{
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: ;
+    background-color: indigo;
+    padding: 10px;
+}
