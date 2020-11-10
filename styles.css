@@ -89,7 +89,9 @@ a {
     color: greenyellow;
 }
 #es1 {
-    background-image: "https://getmatcha.com/wp-content/themes/getmatcha/img/gfx/blocks/masters.jpg";
+    background-image: url("https://getmatcha.com/wp-content/themes/getmatcha/img/gfx/blocks/masters.jpg");
+    background-color: #035157;
+    color: white;
 }
 
 #es3 {
@@ -133,7 +135,19 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-areas: ;
+    grid-template-areas: 'header header header header'
+    'main main right menu'
+    'footer footer footer';
+    gap: 10px;
     background-color: indigo;
     padding: 10px;
+}
+
+.grid-container > div {
+    background-color: lightblue;
+    text-align: center;
+    color: tomato;
+    padding: 20px 0;
+    font-size: 10px;
+    height: 900px;
 }
